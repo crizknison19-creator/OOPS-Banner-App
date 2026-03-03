@@ -1,17 +1,47 @@
-package com.example.student;
+public class OOPSBannerApp {
 
-class student{
-int i=10;
-string name="Criz";
+    // Static function to print a single character pattern
+    public static void printCharacter(String[] pattern) {
+        for (String line : pattern) {
+            System.out.println(line);
+        }
+        System.out.println(); // space between letters
+    }
 
-public student(){
-system.out.println("this is constuctor")
+    // Static function to render full word
+    public static void renderWord() {
+
+        String[] O = {
+                " ***** ",
+                "*     *",
+                "*     *",
+                "*     *",
+                " ***** "
+        };
+
+        String[] P = {
+                "***** ",
+                "*    *",
+                "***** ",
+                "*     ",
+                "*     "
+        };
+
+        String[] S = {
+                " *****",
+                "*     ",
+                " *****",
+                "      *",
+                " *****"
+        };
+
+        printCharacter(O);
+        printCharacter(O);
+        printCharacter(P);
+        printCharacter(S);
+    }
+
+    public static void main(String[] args) {
+        renderWord();   // calling static function
+    }
 }
-public void display(){
-system.out.println("This is method");
-}
-}
-public class student001{
-public static void main(string args[]){}
-studentst = new student();
-st.display();
